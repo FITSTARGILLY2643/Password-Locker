@@ -37,14 +37,20 @@ class TestCredentials(unittest.TestCase):
         '''
          a method that runs before each individual credentials test methods run.
         '''
-        self.new_credentials = Credentials('Gilbert','gillie2643','2643fits')
+        self.new_credentials = Credentials("Gilbert","gillie2643","2643fits")
 
     def tearDown(self):
         '''
         method that does clean up after each test case has run.
         '''
         Credentials.credentials_list = []
-
+    def test_details(self):
+        """
+        Test case to check if a new Credentials instance has been initialized correctly
+        """
+        self.assertEqual(self.new_credentials.account,"Gilbert")
+        self.assertEqual(self.new_credentials.username,"gillie2643")
+        self.assertEqual(self.new_credentials.password,"2643fits")
 
 
 if __name__ == '__main__':
