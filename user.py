@@ -47,5 +47,11 @@ class Credentials:
                 a_user == user.username
                 return a_user
 
+     def save_user_credentials(self):
+        '''
+        save_user_credential method saves a new user object to credentials list
+        '''
+        Credentials.credentials_list.append(self)
+
 
        
