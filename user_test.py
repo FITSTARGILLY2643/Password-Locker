@@ -33,6 +33,12 @@ class TestCredentials(unittest.TestCase):
     """
     A test class that defines the test cases for the class Credentials
     """
+    def setUp(self):
+        '''
+         a method that runs before each individual credentials test methods run.
+        '''
+        self.new_credentials = Credentials('Gilbert','gillie2643','2643fits')
+
 
 if __name__ == '__main__':
     unittest.main()
