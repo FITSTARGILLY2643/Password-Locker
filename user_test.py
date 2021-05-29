@@ -39,6 +39,13 @@ class TestCredentials(unittest.TestCase):
         '''
         self.new_credentials = Credentials('Gilbert','gillie2643','2643fits')
 
+    def tearDown(self):
+        '''
+        method that does clean up after each test case has run.
+        '''
+        Credentials.credentials_list = []
+
+
 
 if __name__ == '__main__':
     unittest.main()
