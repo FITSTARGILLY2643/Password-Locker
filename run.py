@@ -37,3 +37,9 @@ def save_credentials(credentials):
     a function that addes a new credential to the credential
     """
     credentials.save_user_credentials()
+
+def delete_credentials(credentials):
+    """
+    a function that deletes credentials from the credential list
+    """
+    credentials.delete_credentials()
