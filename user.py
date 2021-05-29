@@ -8,3 +8,9 @@ class User:
     def __init__(self,username,password):
         self.username = username
         self.password = password
+
+    def save_user(self):
+        """
+        save_user is a method that saves the user to the user_list
+        """
+        User.user_list.append(self)
