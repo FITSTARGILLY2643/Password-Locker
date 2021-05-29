@@ -92,6 +92,18 @@ class TestCredentials(unittest.TestCase):
         found_credential = Credentials.credentials_exist("Marrie")
         self.assertTrue(found_credential)
 
+    def test_delete_credential(self):
+        """
+        test method to test if we can remove an account credentials from our credentials_list
+        """
+        self.new_credentials.save_user_credentials()
+        test_credentials = Credentials('Marrie','Marrien','Marrien340')
+        test_credentials.save_user_credentials()
+        
+        
+        self.new_credentials.delete_credentials()
+        self.assertEqual(len(Credentials.credentials_list),1)
+
 if __name__ == '__main__':
     unittest.main()
 
