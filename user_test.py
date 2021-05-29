@@ -64,11 +64,22 @@ class TestCredentials(unittest.TestCase):
         test to check if we can save multiple credentials objects to our credentials list
         '''
         self.new_credentials.save_user_credentials()
-        test_creditial = Credentials("Marrie","Marrien","marrie340")
-        test_creditial.save_user_credentials()
+        test_credential = Credentials("Marrie","Marrien","marrie340")
+        test_credential.save_user_credentials()
         self.assertEqual(len(Credentials.credentials_list),2)
+
+     
+    def test_find_creditial(self):
+        """
+        test to check if we can find a credential entry by account name and display the details of the credential
+        """
         
-  
+        self.new_credentials.save_user_credentials()
+        test_credentials = Credentials('Marrie','Marrien','Marrien340')
+        test_credentials.save_user_credentials()
+
+        the_credential = Credentials.find_by_number("Marrie")
+        self.assertEqual(the_credential.account,test_credentials.account)
 
 if __name__ == '__main__':
     unittest.main()
