@@ -83,4 +83,9 @@ class Credentials:
             if credential.account == account:
                 return True
         return False
-       
+     def generate_password(self):
+        """
+        generate random password consisting of letters
+        """
+        password = string.ascii_uppercase + string.ascii_lowercase
+        return ''.join(random.choice(password) for i in range(1,9))
