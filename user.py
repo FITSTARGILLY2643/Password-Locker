@@ -38,5 +38,14 @@ class Credentials:
          self.account = account
          self.username = username
          self.password = password
-         
+
+     @classmethod
+     def verify_user(cls,username,password):
+        a_user = ""
+        for user in User.user_list:
+            if(user.username == username and user.password == password):
+                a_user == user.username
+                return a_user
+
+
        
