@@ -59,17 +59,28 @@ class Credentials:
         """
         Credentials.credentials_list.remove(self)
 
+
+     @classmethod
      def find_by_number(cls,account):
-        """
-        this method takes in password and returns a password that match that number 
+        '''
+        this method takes in account number and returns a password that match that number 
         Args:
-        account: account number to search for
+        account: password number to search for
         Returns :
         password of person that matches the number.
-        """
+        '''
         for credential in cls.credentials_list:
             if(credential.account == account):
                 return credential
 
-
+     @classmethod
+     def credentials_exist(cls,account):
+        '''
+        this method checks whether the user details exists from the user list
+        it returns a boolean value
+        '''
+        for credential in cls.credentials_list:
+            if credential.account == account:
+                return True
+        return False
        
