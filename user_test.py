@@ -7,6 +7,12 @@ class TestUser(unittest.TestCase):
         """
         self.new_user = User("Fitstar","Gillie2021")
 
+    def tearDown(self):
+        '''
+        method that does clean up after each test case has run.
+        '''
+        User.user_list = []
+
     def test_init(self):
         """
         test case to check if the object in initialized correctly
