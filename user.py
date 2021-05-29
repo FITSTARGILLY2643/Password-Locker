@@ -27,3 +27,16 @@ class User:
         a method that display a list of users
         """
         return cls.user_list
+
+class Credentials:
+     """
+        a class that generates an istance of an account credentials and a list of credentials
+
+     """
+     credentials_list = []
+     def __init__(self,account,username,password):
+         self.account = account
+         self.username = username
+         self.password = password
+         
+       
