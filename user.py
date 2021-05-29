@@ -20,3 +20,10 @@ class User:
         delete_user method deletes a saved user from user_list
         '''
         User.user_list.remove(self)
+
+    @classmethod
+    def display_user(cls):
+        """
+        a method that display a list of users
+        """
+        return cls.user_list
