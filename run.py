@@ -11,3 +11,9 @@ def save_user(user):
     function that saves a new user
     """
     user.save_user()
+
+def display_user(user):
+    """
+    function that displays user
+    """
+    return User.display_user()
