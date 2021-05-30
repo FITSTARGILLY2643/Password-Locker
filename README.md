@@ -4,16 +4,16 @@ Gilbert Kiprotich Mutai
 ## Description
 This is an application that allow users to store credentials(username and password) of their different accounts.It also provide options of viewing and deleting those credentials.
 ### Prerequisites
-1. You need to have git installed
+1. You need to have git installed.
 You can install it with the following command in your terminal
 `$ sudo apt install git-all`
-1. You also need Python 3 installed
+1. You also need Python 3 installed.
 You can install it with the following command in your terminal
 `$ sudo apt-get install python3.8`
 ### Setup
 To access this project on your local files, you can clone it using these steps
 1. Open your terminal
-1. Use this command to clone `$ git clone https://github.com/FITSTARGILLY2643/Password-Locker
+1. Use this command to clone `$ git clone https://github.com/FITSTARGILLY2643/Password-Locker'
 1. This will clone the repositoty into your local folder
 1. To run the application type, "python3.8 run.py" in your terminal then press enter.
 1. __Enjoy :)__
