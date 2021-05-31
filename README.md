@@ -4,7 +4,7 @@ Gilbert Kiprotich Mutai
 ## Description
 This is an application that allow users to store credentials(username and password) of their different accounts.It also provide options of viewing and deleting those credentials.
 ### Screenshot
-/home/fitsstar/Documents/core/python/password-locker/img/password-locker.png
+/home/fitsstar/Documents/core/python/password-locker/img/trial.png
 ### Prerequisites
 1. You need to have git installed.
 You can install it with the following command in your terminal
