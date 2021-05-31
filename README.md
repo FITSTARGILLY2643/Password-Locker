@@ -3,6 +3,8 @@
 Gilbert Kiprotich Mutai
 ## Description
 This is an application that allow users to store credentials(username and password) of their different accounts.It also provide options of viewing and deleting those credentials.
+### Screenshot
+![](.img/password-locker.png)
 ### Prerequisites
 1. You need to have git installed.
 You can install it with the following command in your terminal
@@ -22,6 +24,13 @@ To access this project on your local files, you can clone it using these steps
 1. Python
 ### Contacts
 Reach us on fitstargilii1194@gmail.com or call +254 725 060 098
+### BDD
+Input            | Behaviour
+-----------------|-------------
+Username,Password| Creation and login to the system
+Account name     | Creation and viewing of account credentials
+Short codes      | Making decisions such as exit,delete etc
+Enter            | Submitting inputs
 ### Licence
 This project is under the  [MIT](LICENSE)
 License format:
